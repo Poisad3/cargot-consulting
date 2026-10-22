@@ -86,7 +86,7 @@
   --transition-slow:   300ms ease;
 
   /* Nav height */
-  --nav-height: 84px;
+  --nav-height: 64px;
 }
 
 /* ── 2. Reset & Base ────────────────────────────────────────── */
@@ -303,8 +303,8 @@ button {
 
 .logo-mark {
   display: block;
-  width: 72px;
-  height: 72px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   flex-shrink: 0;
 }
