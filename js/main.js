@@ -45,7 +45,7 @@ const translations = {
     'nav.cta':       'Get in Touch',
 
     // Hero
-    'hero.badge':              'Trusted by enterprises across the Americas',
+    'hero.badge':              'Trusted by satisfied clients',
     'hero.heading.line1':      'Engineering the future',
     'hero.heading.line2':      'of your ',
     'hero.heading.highlight':  'technology infrastructure',
@@ -74,7 +74,7 @@ const translations = {
     'services.sec.title': 'Cybersecurity',
     'services.sec.desc':  "Protect your organization's critical assets with a proactive security posture. We assess vulnerabilities, implement controls, and build resilience against evolving threats.",
     'services.sec.f1':    'Security Audits & Risk Assessments',
-    'services.sec.f2':    'Compliance (ISO 27001, NIST, SOC 2)',
+    'services.sec.f2':    'Compliance (ISO 27001, NIST)',
     'services.sec.f3':    'Incident Response Planning',
     'services.sec.f4':    'Security Awareness Training',
 
@@ -89,7 +89,7 @@ const translations = {
     'about.label':   'About Cargot Consulting',
     'about.heading': 'Built by engineers,\ntrusted by enterprises',
     'about.p1':      "Cargot Consulting was founded on the belief that great technology consulting requires deep technical expertise combined with business acumen. We don't sell generic frameworks — we deliver tailored solutions that fit your organization's context, constraints, and ambitions.",
-    'about.p2':      'Our team brings experience from enterprise environments across the US and Latin America, with a track record of delivering measurable outcomes for clients in finance, healthcare, manufacturing, and government.',
+    'about.p2':      'Our team brings experience from enterprise environments , with a track record of delivering measurable outcomes for clients in diverse industries.',
     'about.v1.title': 'Precision',
     'about.v1.desc':  'Every engagement is scoped, documented, and delivered on time.',
     'about.v2.title': 'Partnership',
@@ -140,7 +140,7 @@ const translations = {
     'contact.hours.title': 'Office Hours',
     'contact.hours.days':  'Monday – Friday',
     'contact.hours.note':  'For urgent security incidents, we provide 24/7 emergency response for active clients.',
-    'contact.connect.title': 'Connect',
+    'contact.connect.title': 'Social Media',
 
     // Form
     'form.firstname':             'First Name',
@@ -188,7 +188,7 @@ const translations = {
     'nav.cta':       'Contáctanos',
 
     // Hero
-    'hero.badge':              'Con la confianza de empresas en toda América',
+    'hero.badge':              'Con la confianza de clientes satisfechos',
     'hero.heading.line1':      'Diseñamos el futuro',
     'hero.heading.line2':      'de su ',
     'hero.heading.highlight':  'infraestructura tecnológica',
@@ -217,7 +217,7 @@ const translations = {
     'services.sec.title': 'Ciberseguridad',
     'services.sec.desc':  'Proteja los activos críticos de su organización con una postura de seguridad proactiva. Evaluamos vulnerabilidades, implementamos controles y construimos resiliencia frente a amenazas en evolución.',
     'services.sec.f1':    'Auditorías de Seguridad y Evaluación de Riesgos',
-    'services.sec.f2':    'Cumplimiento (ISO 27001, NIST, SOC 2)',
+    'services.sec.f2':    'Cumplimiento (ISO 27001, NIST)',
     'services.sec.f3':    'Planificación de Respuesta a Incidentes',
     'services.sec.f4':    'Capacitación en Conciencia de Seguridad',
 
@@ -232,7 +232,7 @@ const translations = {
     'about.label':   'Sobre Cargot Consulting',
     'about.heading': 'Construido por ingenieros,\ncon la confianza de empresas',
     'about.p1':      'Cargot Consulting fue fundada con la convicción de que una gran consultoría tecnológica requiere profunda experiencia técnica combinada con visión empresarial. No vendemos marcos genéricos — entregamos soluciones a medida que se adaptan al contexto, las restricciones y las ambiciones de su organización.',
-    'about.p2':      'Nuestro equipo aporta experiencia en entornos empresariales de EE.UU. y Latinoamérica, con un historial de resultados medibles para clientes en finanzas, salud, manufactura y gobierno.',
+    'about.p2':      'Nuestro equipo aporta experiencia en entornos empresariales, con un historial de resultados medibles para clientes en diversos sectores.',
     'about.v1.title': 'Precisión',
     'about.v1.desc':  'Cada compromiso es definido, documentado y entregado a tiempo.',
     'about.v2.title': 'Colaboración',
@@ -279,11 +279,11 @@ const translations = {
     'contact.details.email':         'Correo',
     'contact.details.phone':         'Teléfono',
     'contact.details.location':      'Ubicación',
-    'contact.details.location.value':'Estados Unidos · Latinoamérica',
+    'contact.details.location.value':'Guatemala · Latinoamérica',
     'contact.hours.title': 'Horario de Atención',
     'contact.hours.days':  'Lunes – Viernes',
     'contact.hours.note':  'Para incidentes de seguridad urgentes, ofrecemos respuesta de emergencia 24/7 para clientes activos.',
-    'contact.connect.title': 'Conéctese',
+    'contact.connect.title': 'Redes Sociales',
 
     // Form
     'form.firstname':             'Nombre',
