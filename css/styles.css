@@ -86,7 +86,7 @@
   --transition-slow:   300ms ease;
 
   /* Nav height */
-  --nav-height: 64px;
+  --nav-height: 84px;
 }
 
 /* ── 2. Reset & Base ────────────────────────────────────────── */
@@ -462,6 +462,7 @@ button {
   margin-top: var(--space-4);
   justify-content: center;
   width: 100%;
+  white-space: nowrap;
 }
 
 /* ── 7. Hero ────────────────────────────────────────────────── */
@@ -1361,6 +1362,7 @@ button {
 
   /* Nav */
   .nav-links { display: none; }
+  .nav-actions .btn-primary { display: none; }
   .nav-toggle { display: flex; }
 
   /* Hero */
