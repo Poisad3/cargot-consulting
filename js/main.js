@@ -392,21 +392,21 @@ function initLanguageSwitcher() {
   if (!toggle) return;
 
   // Restore persisted preference, fall back to browser language
-  let currentLang = 'en';
+  let currentLang = 'es';
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === 'en' || stored === 'es') {
       currentLang = stored;
     } else {
       // Auto-detect from browser
-      const browserLang = navigator.language || navigator.userLanguage || 'en';
+      const browserLang = navigator.language || navigator.userLanguage || 'es';
       currentLang = browserLang.toLowerCase().startsWith('es') ? 'es' : 'en';
     }
   } catch (_) { /* storage unavailable */ }
 
-  // Apply on load (only if not English — default HTML is already English)
-  if (currentLang === 'es') {
-    applyLanguage('es');
+  // Apply on load (only if not Spanish — default HTML is already Spanish)
+  if (currentLang === 'en') {
+    applyLanguage('en');
   }
 
   toggle.addEventListener('click', () => {

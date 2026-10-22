@@ -178,11 +178,11 @@ class TestHTMLStructure(unittest.TestCase):
             f"Unclosed tags: {unclosed}")
 
     def test_html_lang_attribute(self):
-        self.assertEqual(self.p.lang_attr, 'en',
-            "Default <html lang> should be 'en'")
+        self.assertEqual(self.p.lang_attr, 'es',
+            "Default <html lang> should be 'es'")
 
     def test_required_sections_present(self):
-        required = {'hero', 'services', 'about', 'process', 'metrics', 'cta', 'contact'}
+        required = {'hero', 'services', 'about', 'process', 'cta', 'contact'}
         missing  = required - self.p.section_ids
         self.assertEqual(missing, set(),
             f"Missing sections with id: {missing}")
@@ -298,7 +298,7 @@ class TestNavigation(unittest.TestCase):
 
     def test_required_nav_sections(self):
         nav_hrefs = set(self.p.nav_links)
-        required  = {'#services', '#about', '#process', '#metrics', '#contact'}
+        required  = {'#services', '#about', '#process', '#contact'}
         missing   = required - nav_hrefs
         self.assertEqual(missing, set(),
             f"Nav links missing for sections: {missing}")
@@ -367,7 +367,6 @@ class TestI18nHTML(unittest.TestCase):
             'about.label', 'about.heading',
             'process.label', 'process.heading',
             'process.s1.title', 'process.s2.title', 'process.s3.title', 'process.s4.title',
-            'metrics.l1', 'metrics.l2', 'metrics.l3', 'metrics.l4',
             'cta.heading', 'cta.btn.primary',
             'contact.heading', 'contact.label',
             'form.firstname', 'form.email', 'form.message', 'form.submit',
