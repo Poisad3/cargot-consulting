@@ -40,6 +40,16 @@
       </ul>
 
       <div class="nav-actions">
+        <!-- Dark mode toggle -->
+        <button
+          class="lang-toggle dark-toggle"
+          id="dark-toggle"
+          aria-label="Toggle dark mode / Cambiar a modo oscuro"
+          title="Toggle dark mode"
+        >
+          <i data-lucide="moon" aria-hidden="true"></i>
+        </button>
+
         <!-- Language toggle -->
         <button
           class="lang-toggle"
@@ -66,6 +76,12 @@
         <li><a href="#process"  class="mobile-nav-link" data-i18n="nav.process">Proceso</a></li>
         <!-- <li><a href="#metrics"  class="mobile-nav-link" data-i18n="nav.results">Resultados</a></li> -->
         <li><a href="#contact"  class="mobile-nav-link" data-i18n="nav.contact">Contacto</a></li>
+        <li>
+          <button class="lang-toggle mobile-dark-toggle" id="mobile-dark-toggle" aria-label="Toggle dark mode" style="width:100%;justify-content:flex-start;gap:0.5rem;padding:0.75rem 1rem;border-radius:8px;">
+            <i data-lucide="moon" aria-hidden="true"></i>
+            <span id="mobile-dark-label" data-i18n="nav.darkmode">Modo Oscuro</span>
+          </button>
+        </li>
         <li><a href="#contact"  class="btn btn-primary mobile-cta" data-i18n="nav.cta">Contáctanos</a></li>
       </ul>
     </div>
