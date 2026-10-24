@@ -43,6 +43,7 @@ const translations = {
     'nav.results':   'Results',
     'nav.contact':   'Contact',
     'nav.cta':       'Get in Touch',
+    'nav.darkmode':  'Dark Mode',
 
     // Hero
     'hero.badge':              'Trusted by satisfied clients',
@@ -186,6 +187,7 @@ const translations = {
     'nav.results':   'Resultados',
     'nav.contact':   'Contacto',
     'nav.cta':       'Contáctanos',
+    'nav.darkmode':  'Modo Oscuro',
 
     // Hero
     'hero.badge':              'Con la confianza de clientes satisfechos',
@@ -708,12 +710,84 @@ function initActiveNavLinks() {
   sections.forEach((s) => observer.observe(s));
 }
 
+/* ─── 11. Dark Mode ─────────────────────────────────────────── */
+
+const DARK_KEY = 'cargot-theme';
+
+/**
+ * Set the icon on a dark-toggle button to sun or moon.
+ * @param {Element} btn
+ * @param {'sun'|'moon'} name
+ */
+function setDarkIcon(btn, name) {
+  if (!btn) return;
+  const icon = btn.querySelector('[data-lucide]');
+  if (icon) {
+    icon.setAttribute('data-lucide', name);
+    lucide.createIcons({ nodes: [icon] });
+  }
+}
+
+/**
+ * Apply or remove the dark theme and update both toggle buttons.
+ * @param {boolean} dark
+ */
+function applyDarkMode(dark) {
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+
+  const desktopBtn = document.getElementById('dark-toggle');
+  const mobileBtn  = document.getElementById('mobile-dark-toggle');
+
+  setDarkIcon(desktopBtn, dark ? 'sun' : 'moon');
+  setDarkIcon(mobileBtn,  dark ? 'sun' : 'moon');
+
+  // Update aria labels for accessibility
+  const label = dark ? 'Switch to light mode' : 'Switch to dark mode';
+  if (desktopBtn) desktopBtn.setAttribute('aria-label', label);
+  if (mobileBtn)  mobileBtn.setAttribute('aria-label', label);
+
+  // Persist preference
+  try {
+    localStorage.setItem(DARK_KEY, dark ? 'dark' : 'light');
+  } catch (_) { /* storage unavailable */ }
+}
+
+function initDarkMode() {
+  // Resolve initial preference: localStorage only — default is always light
+  let isDark = false;
+  try {
+    const stored = localStorage.getItem(DARK_KEY);
+    if (stored === 'dark') isDark = true;
+  } catch (_) { /* storage unavailable, stay light */ }
+
+  applyDarkMode(isDark);
+
+  // Wire up desktop toggle
+  const desktopBtn = document.getElementById('dark-toggle');
+  if (desktopBtn) {
+    desktopBtn.addEventListener('click', () => {
+      const currentlyDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyDarkMode(!currentlyDark);
+    });
+  }
+
+  // Wire up mobile toggle
+  const mobileBtn = document.getElementById('mobile-dark-toggle');
+  if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+      const currentlyDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyDarkMode(!currentlyDark);
+    });
+  }
+}
+
 /* ─── Init ──────────────────────────────────────────────────── */
 
 onReady(() => {
   if (typeof lucide !== 'undefined') lucide.createIcons();
 
   initLanguageSwitcher();
+  initDarkMode();
   initNav();
   initMobileMenu();
   initSmoothScroll();
