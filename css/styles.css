@@ -1641,3 +1641,56 @@ button {
   color: var(--color-blue, #2563EB);
   text-decoration: underline;
 }
+
+/* ── FAQ Section ─────────────────────────────────────────────── */
+.faq {
+  padding: var(--section-padding, 5rem 0);
+  background: var(--color-bg);
+}
+.dark .faq {
+  background: var(--color-dark-bg);
+}
+.faq-list {
+  max-width: 760px;
+  margin: 2.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.25rem 0;
+}
+.dark .faq-item {
+  border-bottom-color: var(--color-dark-border);
+}
+.faq-question {
+  font-size: var(--text-base, 1rem);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+.dark .faq-question {
+  color: var(--color-dark-text, #e6edf3);
+}
+.faq-answer {
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-3);
+  line-height: 1.65;
+  margin: 0;
+}
+.dark .faq-answer {
+  color: var(--color-dark-text-3, #8b949e);
+}
+
+/* ── Reference links (external authority citations) ─────────── */
+.ref-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.ref-link:hover {
+  color: var(--color-blue);
+  text-decoration-style: solid;
+}

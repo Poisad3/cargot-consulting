@@ -9,6 +9,8 @@
   <meta name="description" content="Consultoría tecnológica, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Contáctenos hoy y empiece su proyecto." />
   <meta name="keywords" content="consultoría tecnológica, ciberseguridad, transformación digital, IT consulting, enterprise technology" />
   <link rel="canonical" href="https://poisad3.github.io/cargot-consulting/" />
+  <meta name="date" content="2024-11-01" />
+  <meta name="last-modified" content="2025-11-25" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Consultoría Tecnológica | Cargot Consulting" />
@@ -50,26 +52,103 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Cargot Consulting",
-    "url": "https://poisad3.github.io/cargot-consulting/",
-    "logo": "https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png",
-    "image": "https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png",
-    "description": "Consultoría en tecnología, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica.",
-    "areaServed": ["US", "MX", "GT", "CO", "419"],
-    "serviceType": ["Consultoría Tecnológica", "Ciberseguridad", "Transformación Digital"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "GT",
-      "addressRegion": "Guatemala"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "contact@cargotconsulting.com",
-      "contactType": "customer service",
-      "availableLanguage": ["Spanish", "English"]
-    },
-    "sameAs": []
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://poisad3.github.io/cargot-consulting/#organization",
+        "name": "Cargot Consulting",
+        "url": "https://poisad3.github.io/cargot-consulting/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png",
+          "width": 1024,
+          "height": 1024
+        },
+        "description": "Cargot Consulting ayuda a las empresas a modernizar su infraestructura tecnológica mediante estrategia TI, ciberseguridad y transformación digital.",
+        "areaServed": ["US", "MX", "GT", "CO"],
+        "knowsAbout": ["Consultoría Tecnológica", "Ciberseguridad", "Transformación Digital", "Arquitectura Cloud", "ISO 27001", "NIST"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "GT",
+          "addressRegion": "Guatemala"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@cargotconsulting.com",
+          "contactType": "customer service",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://poisad3.github.io/cargot-consulting/#website",
+        "url": "https://poisad3.github.io/cargot-consulting/",
+        "name": "Cargot Consulting",
+        "publisher": {
+          "@id": "https://poisad3.github.io/cargot-consulting/#organization"
+        },
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://poisad3.github.io/cargot-consulting/#webpage",
+        "url": "https://poisad3.github.io/cargot-consulting/",
+        "name": "Consultoría Tecnológica | Cargot Consulting",
+        "isPartOf": { "@id": "https://poisad3.github.io/cargot-consulting/#website" },
+        "about": { "@id": "https://poisad3.github.io/cargot-consulting/#organization" },
+        "datePublished": "2024-11-01",
+        "dateModified": "2025-11-25",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://poisad3.github.io/cargot-consulting/#service",
+        "name": "Cargot Consulting",
+        "url": "https://poisad3.github.io/cargot-consulting/",
+        "provider": { "@id": "https://poisad3.github.io/cargot-consulting/#organization" },
+        "serviceType": ["Consultoría Tecnológica", "Ciberseguridad", "Transformación Digital"],
+        "areaServed": ["US", "MX", "GT", "CO"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://poisad3.github.io/cargot-consulting/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué servicios ofrece Cargot Consulting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cargot Consulting ofrece consultoría tecnológica, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué países opera Cargot Consulting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Atendemos clientes en Estados Unidos, México, Guatemala, Colombia y el resto de Latinoamérica."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo es el proceso de consultoría?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Seguimos cuatro etapas: Descubrimiento y Evaluación, Estrategia y Planificación, Implementación y Guía, y Revisión y Optimización."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo tarda en responder Cargot Consulting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Respondemos dentro de un día hábil. Para incidentes de seguridad urgentes, ofrecemos respuesta de emergencia 24/7 para clientes activos."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -89,6 +168,7 @@
         <li><a href="#services" class="nav-link" data-i18n="nav.services">Servicios</a></li>
         <li><a href="#about"    class="nav-link" data-i18n="nav.about">Nosotros</a></li>
         <li><a href="#process"  class="nav-link" data-i18n="nav.process">Proceso</a></li>
+        <li><a href="#faq"      class="nav-link" data-i18n="nav.faq">FAQ</a></li>
         <!-- <li><a href="#metrics"  class="nav-link" data-i18n="nav.results">Resultados</a></li> -->
         <li><a href="#contact"  class="nav-link" data-i18n="nav.contact">Contacto</a></li>
       </ul>
@@ -128,6 +208,7 @@
         <li><a href="#services" class="mobile-nav-link" data-i18n="nav.services">Servicios</a></li>
         <li><a href="#about"    class="mobile-nav-link" data-i18n="nav.about">Nosotros</a></li>
         <li><a href="#process"  class="mobile-nav-link" data-i18n="nav.process">Proceso</a></li>
+        <li><a href="#faq"      class="mobile-nav-link" data-i18n="nav.faq">FAQ</a></li>
         <!-- <li><a href="#metrics"  class="mobile-nav-link" data-i18n="nav.results">Resultados</a></li> -->
         <li><a href="#contact"  class="mobile-nav-link" data-i18n="nav.contact">Contacto</a></li>
         <li>
@@ -157,9 +238,9 @@
         </h1>
 
         <p class="hero-subtext" data-i18n="hero.subtext">
-          Cargot Consulting ofrece asesoría especializada en estrategia tecnológica,
-          ciberseguridad y transformación digital — diseñada para organizaciones que
-          exigen precisión, confiabilidad y resultados a largo plazo.
+          Cargot Consulting ayuda a las empresas a modernizar su infraestructura tecnológica
+          mediante estrategia TI, ciberseguridad y transformación digital — diseñado para
+          organizaciones que exigen precisión, confiabilidad y resultados a largo plazo.
         </p>
 
         <div class="hero-actions">
@@ -211,7 +292,7 @@
             </p>
             <ul class="service-features" role="list">
               <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.tech.f1">Estrategia TI y Hoja de Ruta</span></li>
-              <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.tech.f2">Arquitectura Cloud y Migración</span></li>
+              <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.tech.f2">Arquitectura <a href="https://aws.amazon.com/es/what-is-cloud-computing/" rel="noopener noreferrer" target="_blank" class="ref-link">Cloud</a> y Migración</span></li>
               <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.tech.f3">Integración de Sistemas</span></li>
               <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.tech.f4">Evaluaciones Tecnológicas</span></li>
             </ul>
@@ -234,7 +315,7 @@
             </p>
             <ul class="service-features" role="list">
               <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.sec.f1">Auditorías de Seguridad y Evaluación de Riesgos</span></li>
-              <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.sec.f2">Cumplimiento (ISO 27001, NIST)</span></li>
+              <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.sec.f2">Cumplimiento (<a href="https://www.iso.org/isoiec-27001-information-security.html" rel="noopener noreferrer" target="_blank" class="ref-link">ISO 27001</a>, <a href="https://www.nist.gov/cyberframework" rel="noopener noreferrer" target="_blank" class="ref-link">NIST</a>)</span></li>
               <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.sec.f3">Planificación de Respuesta a Incidentes</span></li>
               <li><i data-lucide="check" aria-hidden="true"></i><span data-i18n="services.sec.f4">Capacitación en Conciencia de Seguridad</span></li>
             </ul>
@@ -339,7 +420,7 @@
       <div class="container">
         <div class="section-header">
           <span class="section-label" data-i18n="process.label">Cómo Trabajamos</span>
-          <h2 class="section-heading" id="process-heading" data-i18n="process.heading">Un modelo de trabajo estructurado</h2>
+          <h2 class="section-heading" id="process-heading" data-i18n="process.heading">¿Cómo trabaja Cargot Consulting?</h2>
           <p class="section-subtext" data-i18n="process.subtext">
             Cada compromiso sigue un proceso riguroso diseñado para minimizar riesgos,
             maximizar la claridad y entregar resultados sobre los que su equipo pueda construir.
@@ -395,7 +476,34 @@
       </div>
     </section>
 
-    <!-- ===================== METRICS ===================== 
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="faq.label">Preguntas Frecuentes</span>
+          <h2 class="section-heading" id="faq-heading" data-i18n="faq.heading">Preguntas frecuentes</h2>
+        </div>
+        <dl class="faq-list">
+          <div class="faq-item">
+            <dt class="faq-question" data-i18n="faq.q1">¿Qué servicios ofrece Cargot Consulting?</dt>
+            <dd class="faq-answer" data-i18n="faq.a1">Ofrecemos consultoría tecnológica, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Cada servicio se diseña a la medida de las necesidades de su organización.</dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-question" data-i18n="faq.q2">¿En qué países opera Cargot Consulting?</dt>
+            <dd class="faq-answer" data-i18n="faq.a2">Atendemos clientes en Estados Unidos, México, Guatemala, Colombia y el resto de Latinoamérica, con compromisos presenciales y remotos.</dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-question" data-i18n="faq.q3">¿Cómo es el proceso de consultoría?</dt>
+            <dd class="faq-answer" data-i18n="faq.a3">Seguimos cuatro etapas: Descubrimiento y Evaluación, Estrategia y Planificación, Implementación y Guía, y Revisión y Optimización. Sin supuestos y sin marcos genéricos.</dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-question" data-i18n="faq.q4">¿Cuánto tiempo tarda en responder Cargot Consulting?</dt>
+            <dd class="faq-answer" data-i18n="faq.a4">Respondemos dentro de un día hábil. Para incidentes de seguridad urgentes, ofrecemos respuesta de emergencia 24/7 para clientes activos.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <!-- ===================== METRICS =====================
     <section class="metrics" id="metrics" aria-labelledby="metrics-heading">
       <div class="container">
         <h2 class="sr-only" id="metrics-heading" data-i18n="metrics.heading">Our results by the numbers</h2>
