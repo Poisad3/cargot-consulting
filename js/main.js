@@ -463,6 +463,7 @@ function initMobileMenu() {
     menu.classList.add('is-open');
     toggle.setAttribute('aria-expanded', 'true');
     menu.setAttribute('aria-hidden', 'false');
+    menu.removeAttribute('inert');
     setIcon('x');
     document.addEventListener('click', handleOutsideClick);
   }
@@ -472,6 +473,7 @@ function initMobileMenu() {
     menu.classList.remove('is-open');
     toggle.setAttribute('aria-expanded', 'false');
     menu.setAttribute('aria-hidden', 'true');
+    menu.setAttribute('inert', '');
     setIcon('menu');
     document.removeEventListener('click', handleOutsideClick);
   }

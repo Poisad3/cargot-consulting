@@ -1618,3 +1618,26 @@ button {
   color: var(--color-text);
 }
 
+
+/* ── Privacy Policy section ─────────────────────────────────── */
+.privacy-policy {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-dark-border, #21262D);
+  color: var(--color-text-4, #9CA3AF);
+  font-size: var(--text-sm, 0.875rem);
+  line-height: 1.7;
+}
+.privacy-policy h2 {
+  font-size: var(--text-base, 1rem);
+  font-weight: 600;
+  color: var(--color-text-3, #6B7280);
+  margin-bottom: 0.75rem;
+}
+.privacy-policy p {
+  margin-bottom: 0.5rem;
+}
+.privacy-policy a {
+  color: var(--color-blue, #2563EB);
+  text-decoration: underline;
+}

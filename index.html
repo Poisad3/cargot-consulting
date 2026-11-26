@@ -6,16 +6,18 @@
 
   <!-- SEO -->
   <title>Consultoría Tecnológica | Cargot Consulting</title>
-  <meta name="description" content="Cargot Consulting — Consultoría en tecnología, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Contáctenos hoy." />
+  <meta name="description" content="Consultoría tecnológica, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Contáctenos hoy y empiece su proyecto." />
   <meta name="keywords" content="consultoría tecnológica, ciberseguridad, transformación digital, IT consulting, enterprise technology" />
   <link rel="canonical" href="https://poisad3.github.io/cargot-consulting/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Consultoría Tecnológica | Cargot Consulting" />
-  <meta property="og:description" content="Consultoría en tecnología, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Contáctenos hoy." />
+  <meta property="og:description" content="Consultoría tecnológica, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Contáctenos hoy." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://poisad3.github.io/cargot-consulting/" />
   <meta property="og:image" content="https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
   <meta property="og:image:alt" content="Cargot Consulting logo" />
   <meta property="og:locale" content="es_419" />
 
@@ -29,7 +31,7 @@
   <meta name="theme-color" content="#0f172a" />
 
   <!-- Content Security Policy -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://formspree.io;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://formspree.io; object-src 'none'; base-uri 'self';" />
 
   <link rel="icon" type="image/png" href="assets/logo/CargoC.png">
 
@@ -39,7 +41,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Lucide Icons (deferred to avoid render-blocking) -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="https://unpkg.com/lucide@1.80.0/dist/umd/lucide.min.js" defer integrity="sha384-PWeb06LtUjy5pK5WEodXNFixE606laLtZrb1yqqDk2/DM5/P0dAQNQpvAwki8znP" crossorigin="anonymous"></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css" />
@@ -121,7 +123,7 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true" aria-hidden="true">
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true" aria-hidden="true" inert>
       <ul class="mobile-nav-links" role="list">
         <li><a href="#services" class="mobile-nav-link" data-i18n="nav.services">Servicios</a></li>
         <li><a href="#about"    class="mobile-nav-link" data-i18n="nav.about">Nosotros</a></li>
@@ -648,7 +650,7 @@
         <nav class="footer-nav" aria-label="Legal navigation">
           <h4 class="footer-nav-title" data-i18n="footer.nav.legal">Legal</h4>
           <ul role="list">
-            <li><a href="#" data-i18n="footer.nav.privacy">Política de Privacidad</a></li>
+            <li><a href="#privacy-policy" data-i18n="footer.nav.privacy">Política de Privacidad</a></li>
             <li><a href="#" data-i18n="footer.nav.terms">Términos de Servicio</a></li>
           </ul>
         </nav>
@@ -661,6 +663,14 @@
         </p>
         <p class="footer-built" data-i18n="footer.built">Diseñado con precisión.</p>
       </div>
+
+      <!-- Privacy Policy -->
+      <section id="privacy-policy" class="privacy-policy" aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading">Política de Privacidad</h2>
+        <p><strong>Última actualización:</strong> <time datetime="2024-11-01">Noviembre 2024</time></p>
+        <p>Cargot Consulting respeta su privacidad. Los datos personales que nos proporcione a través del formulario de contacto (nombre, correo electrónico, empresa y mensaje) se utilizan únicamente para responder a su consulta y nunca se venden ni comparten con terceros.</p>
+        <p>Los datos son procesados por <a href="https://formspree.io/legal/privacy-policy" rel="noopener noreferrer" target="_blank">Formspree</a> conforme a su política de privacidad. Puede solicitar la eliminación de sus datos en cualquier momento escribiéndonos a <a href="mailto:contact@cargotconsulting.com">contact@cargotconsulting.com</a>.</p>
+      </section>
     </div>
   </footer>
 
