@@ -40,6 +40,7 @@ const translations = {
     'nav.services':  'Services',
     'nav.about':     'About',
     'nav.process':   'Process',
+    'nav.faq':       'FAQ',
     'nav.results':   'Results',
     'nav.contact':   'Contact',
     'nav.cta':       'Get in Touch',
@@ -106,7 +107,7 @@ const translations = {
 
     // Process
     'process.label':   'How We Work',
-    'process.heading': 'A structured engagement model',
+    'process.heading': 'How does Cargot Consulting work?',
     'process.subtext': 'Every engagement follows a rigorous process designed to minimize risk, maximize clarity, and deliver results your team can build on.',
     'process.s1.title': 'Discovery & Assessment',
     'process.s1.desc':  'We begin with a structured discovery session to understand your current state, goals, constraints, and stakeholder landscape. No assumptions, no templated audits.',
@@ -166,6 +167,18 @@ const translations = {
     'form.error.required':        'This field is required.',
     'form.error.email':           'Please enter a valid email address.',
 
+    // FAQ
+    'faq.label':   'FAQ',
+    'faq.heading': 'Frequently asked questions',
+    'faq.q1': 'What services does Cargot Consulting offer?',
+    'faq.a1': "We offer technology consulting, cybersecurity, and digital transformation for companies in the U.S. and Latin America. Each service is tailored to your organization's specific needs.",
+    'faq.q2': 'Which countries does Cargot Consulting serve?',
+    'faq.a2': 'We serve clients in the United States, Mexico, Guatemala, Colombia, and across Latin America, with both on-site and remote engagements.',
+    'faq.q3': 'What does the consulting process look like?',
+    'faq.a3': 'We follow four stages: Discovery & Assessment, Strategy & Planning, Implementation & Guidance, and Review & Optimization — no assumptions, no generic templates.',
+    'faq.q4': 'How quickly does Cargot Consulting respond?',
+    'faq.a4': 'We respond within one business day. For urgent security incidents, we provide 24/7 emergency response for active clients.',
+
     // Footer
     'footer.tagline':      'Enterprise technology consulting built for organizations that demand precision, reliability, and long-term results.',
     'footer.nav.services': 'Services',
@@ -184,6 +197,7 @@ const translations = {
     'nav.services':  'Servicios',
     'nav.about':     'Nosotros',
     'nav.process':   'Proceso',
+    'nav.faq':       'FAQ',
     'nav.results':   'Resultados',
     'nav.contact':   'Contacto',
     'nav.cta':       'Contáctanos',
@@ -194,7 +208,7 @@ const translations = {
     'hero.heading.line1':      'Diseñamos el futuro',
     'hero.heading.line2':      'de su ',
     'hero.heading.highlight':  'infraestructura tecnológica',
-    'hero.subtext':            'Cargot Consulting ofrece asesoría especializada en estrategia tecnológica, ciberseguridad y transformación digital — diseñada para organizaciones que exigen precisión, confiabilidad y resultados a largo plazo.',
+    'hero.subtext':            'Cargot Consulting ayuda a las empresas a modernizar su infraestructura tecnológica mediante estrategia TI, ciberseguridad y transformación digital — diseñado para organizaciones que exigen precisión, confiabilidad y resultados a largo plazo.',
     'hero.cta.primary':        'Iniciar una Conversación',
     'hero.cta.secondary':      'Explorar Servicios',
     'hero.trust.label':        'Atendemos clientes en',
@@ -250,7 +264,7 @@ const translations = {
 
     // Process
     'process.label':   'Cómo Trabajamos',
-    'process.heading': 'Un modelo de trabajo estructurado',
+    'process.heading': '¿Cómo trabaja Cargot Consulting?',
     'process.subtext': 'Cada compromiso sigue un proceso riguroso diseñado para minimizar riesgos, maximizar la claridad y entregar resultados sobre los que su equipo pueda construir.',
     'process.s1.title': 'Descubrimiento y Evaluación',
     'process.s1.desc':  'Comenzamos con una sesión de descubrimiento estructurada para comprender su estado actual, objetivos, restricciones y el panorama de partes interesadas. Sin supuestos, sin auditorías genéricas.',
@@ -309,6 +323,18 @@ const translations = {
     'form.success':               'Mensaje enviado. Nos pondremos en contacto dentro de un día hábil.',
     'form.error.required':        'Este campo es obligatorio.',
     'form.error.email':           'Por favor ingrese una dirección de correo válida.',
+
+    // FAQ
+    'faq.label':   'Preguntas Frecuentes',
+    'faq.heading': 'Preguntas frecuentes',
+    'faq.q1': '¿Qué servicios ofrece Cargot Consulting?',
+    'faq.a1': 'Ofrecemos consultoría tecnológica, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Cada servicio se diseña a la medida de las necesidades de su organización.',
+    'faq.q2': '¿En qué países opera Cargot Consulting?',
+    'faq.a2': 'Atendemos clientes en Estados Unidos, México, Guatemala, Colombia y el resto de Latinoamérica, con compromisos presenciales y remotos.',
+    'faq.q3': '¿Cómo es el proceso de consultoría?',
+    'faq.a3': 'Seguimos cuatro etapas: Descubrimiento y Evaluación, Estrategia y Planificación, Implementación y Guía, y Revisión y Optimización. Sin supuestos y sin marcos genéricos.',
+    'faq.q4': '¿Cuánto tiempo tarda en responder Cargot Consulting?',
+    'faq.a4': 'Respondemos dentro de un día hábil. Para incidentes de seguridad urgentes, ofrecemos respuesta de emergencia 24/7 para clientes activos.',
 
     // Footer
     'footer.tagline':      'Consultoría tecnológica empresarial para organizaciones que exigen precisión, confiabilidad y resultados a largo plazo.',
@@ -463,6 +489,7 @@ function initMobileMenu() {
     menu.classList.add('is-open');
     toggle.setAttribute('aria-expanded', 'true');
     menu.setAttribute('aria-hidden', 'false');
+    menu.removeAttribute('inert');
     setIcon('x');
     document.addEventListener('click', handleOutsideClick);
   }
@@ -472,6 +499,7 @@ function initMobileMenu() {
     menu.classList.remove('is-open');
     toggle.setAttribute('aria-expanded', 'false');
     menu.setAttribute('aria-hidden', 'true');
+    menu.setAttribute('inert', '');
     setIcon('menu');
     document.removeEventListener('click', handleOutsideClick);
   }
