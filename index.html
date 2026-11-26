@@ -3,31 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cargot Consulting — Consultoría empresarial en tecnología, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica." />
-  <meta name="keywords" content="technology consulting, cybersecurity, digital transformation, IT consulting, enterprise technology" />
-  <meta property="og:title" content="Cargot Consulting" />
-  <meta property="og:description" content="Enterprise IT consulting — Technology, Cybersecurity, Digital Transformation." />
+
+  <!-- SEO -->
+  <title>Consultoría Tecnológica | Cargot Consulting</title>
+  <meta name="description" content="Cargot Consulting — Consultoría en tecnología, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Contáctenos hoy." />
+  <meta name="keywords" content="consultoría tecnológica, ciberseguridad, transformación digital, IT consulting, enterprise technology" />
+  <link rel="canonical" href="https://poisad3.github.io/cargot-consulting/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Consultoría Tecnológica | Cargot Consulting" />
+  <meta property="og:description" content="Consultoría en tecnología, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica. Contáctenos hoy." />
   <meta property="og:type" content="website" />
-  <title>Cargot Consulting</title>
+  <meta property="og:url" content="https://poisad3.github.io/cargot-consulting/" />
+  <meta property="og:image" content="https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png" />
+  <meta property="og:image:alt" content="Cargot Consulting logo" />
+  <meta property="og:locale" content="es_419" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Consultoría Tecnológica | Cargot Consulting" />
+  <meta name="twitter:description" content="Consultoría en tecnología, ciberseguridad y transformación digital. Contáctenos hoy." />
+  <meta name="twitter:image" content="https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://formspree.io;" />
+
   <link rel="icon" type="image/png" href="assets/logo/CargoC.png">
+
   <!-- Geist Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <!-- Lucide Icons (deferred to avoid render-blocking) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cargot Consulting",
+    "url": "https://poisad3.github.io/cargot-consulting/",
+    "logo": "https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png",
+    "image": "https://poisad3.github.io/cargot-consulting/assets/logo/Cargot-final.png",
+    "description": "Consultoría en tecnología, ciberseguridad y transformación digital para empresas en EE.UU. y Latinoamérica.",
+    "areaServed": ["US", "MX", "GT", "CO", "419"],
+    "serviceType": ["Consultoría Tecnológica", "Ciberseguridad", "Transformación Digital"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GT",
+      "addressRegion": "Guatemala"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@cargotconsulting.com",
+      "contactType": "customer service",
+      "availableLanguage": ["Spanish", "English"]
+    },
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
   <!-- ===================== NAVIGATION ===================== -->
   <header class="nav-header" id="nav-header">
     <nav class="nav-container" role="navigation" aria-label="Main navigation">
       <a href="#" class="nav-logo" aria-label="Cargot Consulting home">
-        <img src="assets/logo/Cargot-final.png" alt="Cargot Consulting logo" class="logo-mark" />
+        <img src="assets/logo/Cargot-final.png" alt="Cargot Consulting logo" class="logo-mark" width="40" height="40" fetchpriority="high" />
         <span class="logo-text">Cargot<span class="logo-accent">Consulting</span></span>
       </a>
 
@@ -69,7 +121,7 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true" aria-hidden="true">
       <ul class="mobile-nav-links" role="list">
         <li><a href="#services" class="mobile-nav-link" data-i18n="nav.services">Servicios</a></li>
         <li><a href="#about"    class="mobile-nav-link" data-i18n="nav.about">Nosotros</a></li>
@@ -87,7 +139,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
 
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="hero" aria-labelledby="hero-heading">
@@ -566,7 +618,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="nav-logo footer-logo" aria-label="Cargot Consulting home">
-            <img src="assets/logo/Cargot-final.png" alt="Cargot Consulting logo" class="logo-mark" />
+            <img src="assets/logo/Cargot-final.png" alt="Cargot Consulting logo" class="logo-mark" width="40" height="40" loading="lazy" />
             <span class="logo-text">Cargot<span class="logo-accent">Consulting</span></span>
           </a>
           <p class="footer-tagline" data-i18n="footer.tagline">
